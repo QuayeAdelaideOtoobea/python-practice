@@ -1,0 +1,92 @@
+# conditional statements
+# if - executes only if condition is true
+"""name = "Afua"
+if name == "Afua":
+ print("Happy")"""
+ 
+ # elif - used when there are more than one conditions
+ # else - executes when the condition is false
+ 
+ 
+"""if 1>2:
+    print("1 is greater than 2")
+elif 2>1:
+    print("1 is not greater than 2")
+else:
+    print("1 is equal to 2")"""
+    
+# while loop - code runs as long as condition is true
+"""num = 1  
+while num <=10:
+ print(num) 
+ num += 1""" 
+ 
+ #for loop 
+"""for i in range(11):
+  print(i)"""
+  
+  #list - allows you store multiple items in a singlr variable
+  # mutable , .append , .remove
+"""my_numbers = [1,2,3,4,"five",6]
+my_numbers.append("seven")
+print(my_numbers) """
+
+#dicitionary
+"""dicitionary_ed = { "name":"Ade" , "age":5 }
+
+#print("My name is %s" %(dicitionary_ed["name"]))
+
+dicitionary_ed["nationality"] = "French"
+print(dicitionary_ed)""" 
+
+# A hash data structure stores data as key-value pairs, using a hash function to compute
+# where to store each value, enabling fast insertion, lookup, and deletion. e.g. dicitionary 
+
+"""dictionary = { "some_key": "some_value" }
+
+for key in dictionary:
+    print("%s --> %s" %(key, dictionary[key]))"""
+
+# some_key --> some_value
+
+"""bookshelf = [
+  "The Effective Engineer",
+  "The 4-hour Workweek",
+  "Zero to One",
+  "Lean Startup",
+  "Hooked"
+]
+
+ for book in bookshelf:
+    print(book)
+print(bookshelf)""" 
+
+"""--this
+dictionary = { "name": "Afua" }
+for key, value in dictionary.items():
+    print(f"{key} --> {value}")
+    
+   -- or that
+    dictionary = { "age": 12 }
+for key in dictionary:
+    print("%s --> %s" %(key, dictionary[key]))
+    
+    --or thiss
+dictionary = {"nationanlity":"Ghanaian"}
+for key in dictionary:
+    print(f"{key} --> {dictionary[key]}")
+    
+dictionary = { "name": "Akua" }
+
+for key, value in dictionary.items():
+    print("%s --> %s" %(key, value))"""
+    
+    
+
+
+
+
+
+
+ 
+ 
