@@ -16,28 +16,38 @@ else:
     print("1 is equal to 2")"""
     
 # while loop - code runs as long as condition is true
-"""num = 1  
-while num <=10:
+num = 1  
+"""while num <=10:
  print(num) 
- num += 1""" 
+ num += 1"""
  
  #for loop 
 """for i in range(11):
   print(i)"""
   
-  #list - allows you store multiple items in a singlr variable
+  #list - allows you store multiple items in a single variable
   # mutable , .append , .remove
 """my_numbers = [1,2,3,4,"five",6]
+my_numbers.pop(2)
 my_numbers.append("seven")
-print(my_numbers) """
+print(my_numbers)"""
 
-#dicitionary
-"""dicitionary_ed = { "name":"Ade" , "age":5 }
+#dictionary
+"""dictionary_ed = { "name":"Ade" ,"age":5 }
 
 #print("My name is %s" %(dicitionary_ed["name"]))
 
-dicitionary_ed["nationality"] = "French"
-print(dicitionary_ed)""" 
+dictionary_ed["nationality"] = "French"
+#print(dictionary_ed)
+
+for key,value in dictionary_ed.items():
+    print(key, ":", value)
+    
+dictionary_ed["nickname"] = "Ada"  
+print(dictionary_ed)
+
+for key, value in dictionary_ed.items():
+ print(key,":" , value)"""
 
 # A hash data structure stores data as key-value pairs, using a hash function to compute
 # where to store each value, enabling fast insertion, lookup, and deletion. e.g. dicitionary 
@@ -49,7 +59,7 @@ for key in dictionary:
 
 # some_key --> some_value
 
-"""bookshelf = [
+bookshelf = [
   "The Effective Engineer",
   "The 4-hour Workweek",
   "Zero to One",
@@ -57,16 +67,18 @@ for key in dictionary:
   "Hooked"
 ]
 
- for book in bookshelf:
+"""for book in bookshelf:
     print(book)
 print(bookshelf)""" 
 
-"""--this
-dictionary = { "name": "Afua" }
+#--this
+"""dictionary = { "name": "Afua" }
 for key, value in dictionary.items():
-    print(f"{key} --> {value}")
+    #print(f"{key} --> {value}")
+    print(key,"-->",value)
+    print(key,":", value)"""
     
-   -- or that
+"""  -- or that
     dictionary = { "age": 12 }
 for key in dictionary:
     print("%s --> %s" %(key, dictionary[key]))
@@ -80,11 +92,91 @@ dictionary = { "name": "Akua" }
 
 for key, value in dictionary.items():
     print("%s --> %s" %(key, value))"""
+    
+""" Objects are a representation of real world objects like cars, dogs, or bikes. 
+The objects share two main characteristics: data and behavior.
+Cars have data, like number of wheels, number of doors, and seating capacity 
+They also exhibit behavior: they can accelerate, stop, show how much fuel is left, etc. 
+Data → Attributes and Behavior → Methods
+Class is the blueprint from which individual objects are created.Objects are instances of a class."""
 
-print("Hello World!", end=" ")
-print("I will print on the same line.")
+"""There are four collection data types in the Python programming language:
+List is a collection which is ordered and changeable. Allows duplicate members.
+Tuple is a collection which is ordered and unchangeable. Allows duplicate members.
+Set is a collection which is unordered, unchangeable*, and unindexed. No duplicate members.
+Dictionary is a collection which is ordered** and changeable. No duplicate members."""
+
+"""def joint_sets():
+    set1={"orange","apple","banana"} 
+    set2={"square","triangle","rectangle"}
+   # set3 = set1.union(set2)
+   # return set3
+   # set3 = set1&set2 #intersection
+  # set3 = set1|set2 #union
+    return set3
     
+print(joint_sets())"""
+
+"""thistuple = ("apple", "banana", "cherry")
+print(thistuple)""" 
+
+"""def max_number(*numbers):
+    if len(numbers) == 0:
+        return None
+    maximum_number = numbers[0]
+    for num in numbers:
+        if num > maximum_number:
+            maximum_number = num
+    return maximum_number 
+print(max_number(2,1,6,8,4,5,3))"""
+
+"""def min_number(*numbers):
+    if len(numbers) == 0:
+     return none
+    minimum_number = numbers[0]
+    for num in numbers:
+         if num < minimum_number:
+              minimum_number = num
+    return minimum_number
+print(min_number(12,5,8,4,3,7,1))"""
+
+"""price = 555
+txt = f"It is very {'Expensive' if price>50 else 'Cheap'}"
+
+print(txt)"""
+
+#user input
+"""print("Enter your name:")
+name = input()
+print(f"Hello {name}")"""
+
+"""name = input("Enter your name:")
+print(f"Hello {name} ")""" 
+
+"""def mathematics():
+    result = pow(3,5)
+    return result
     
+print(mathematics())"""
+
+"""def power(x, y):
+    result = pow(x, y)
+    print(f"{x} raised to the power of {y} is {result}")
+    
+power(3,5)  
+
+| Term           | Meaning                                         |
+| -------------- | ----------------------------------------------- |
+| JSON           | JavaScript Object Notation                      |
+| Purpose        | Store/share structured data (like dictionaries) |
+| In Python      | Use `json` module                               |
+| `json.dumps()` | Convert Python → JSON                           |
+| `json.loads()` | Convert JSON → Python """    
+
+|
+
+ 
+
 
 
 
